@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+	<head>
+		<script type='text/javascript' src='../jquery-1.7.2.js'></script>
+		<script type='text/javascript' src='../knockout-2.3.0.js'></script>
+	</head>
+	
+
+	<body>
+
+	    <input type="text" id="txtValue" data-bind="value: myValue" />
+
+	    <span id="spnValue" data-bind="text: myValue"></span>
+
+	    <script type="text/javascript">
+	        var myViewModel =
+	        {
+	            myValue: ko.observable("Darkthread")
+	        }
+	        ko.applyBindings(myViewModel);
+	    </script>
+	    
+	</body>
+</html>
